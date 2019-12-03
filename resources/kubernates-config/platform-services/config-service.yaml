@@ -1,0 +1,35 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: admin-service
+spec:
+  selector:
+    app: admin-service
+    tier: platform
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8888
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: admin-service
+spec:
+  selector:
+    matchLabels:
+      app: admin-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: admin-service
+    spec:
+      containers:
+        - name: admin-service
+          image: admin-service:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8888
+

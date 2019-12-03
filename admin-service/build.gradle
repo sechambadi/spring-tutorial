@@ -1,0 +1,9 @@
+ext {
+	createDockerImage = true
+}
+
+dependencies {
+	implementation 'de.codecentric:spring-boot-admin-starter-server'
+}
+
+

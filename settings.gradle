@@ -1,0 +1,8 @@
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+	}
+}
+rootProject.name = 'platform-services'
+
+include 'config-service','turbine-dashboard','admin-service'

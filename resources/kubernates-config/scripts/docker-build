@@ -1,0 +1,1 @@
+for i in config-service turbine-dashboard admin-service; do cd $i; docker build --build-arg JAR_FILE=build/libs/$i-1.0.0-SNAPSHOT.jar --file=Dockerfile   --tag=$i:1.0.0 --rm=true .; cd ..;done;

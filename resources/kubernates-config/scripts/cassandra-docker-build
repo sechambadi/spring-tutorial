@@ -1,0 +1,1 @@
+cd Docker/cassandra && docker build --file=Dockerfile   --tag=cassandra-microworld:1.0.0 --rm=true .

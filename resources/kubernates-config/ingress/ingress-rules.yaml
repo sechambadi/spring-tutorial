@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: \"false\"
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /product
+            backend:
+              serviceName: product-service
+              servicePort: 80
+          - path: /price
+            backend:
+              serviceName: price-service
+              servicePort: 80
+          - path: /aggregate
+            backend:
+              serviceName: aggregate-service
+              servicePort: 80
+

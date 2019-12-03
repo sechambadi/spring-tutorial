@@ -1,0 +1,35 @@
+server:
+  port: 8888
+
+management:
+  security:
+    enabled: false
+  endpoint:
+    health:
+      show-detail: always
+  metrics:
+    tags:
+      application: config-service
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  rabbitmq:
+    host:     localhost
+    port:     5672
+    username: guest
+    password: guest
+  cloud:
+    ##config.server.git.uri: file:/Users/sthiruv1/tmp/environment/new-congfig
+    config:
+      server:
+        git:
+          uri: file:///Users/sthiruv1/tmp/environment/configuration
+    bus.enabled: false
+    config.enabled: true
+    discovery.enabled: true

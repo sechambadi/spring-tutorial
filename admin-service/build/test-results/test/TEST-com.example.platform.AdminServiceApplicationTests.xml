@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.platform.AdminServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-13T19:24:23" hostname="A05041411" time="0.116">
+  <properties/>
+  <testcase name="contextLoads" classname="com.example.platform.AdminServiceApplicationTests" time="0.116"/>
+  <system-out><![CDATA[2019-09-13 12:24:17,847 Test worker DEBUG Apache Log4j Core 2.11.2 initializing configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml]
+2019-09-13 12:24:17,854 Test worker DEBUG Installed 1 script engine
+2019-09-13 12:24:18,030 Test worker DEBUG Oracle Nashorn version: 1.8.0_222, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2019-09-13 12:24:18,030 Test worker DEBUG PluginManager 'Core' found 117 plugins
+2019-09-13 12:24:18,031 Test worker DEBUG PluginManager 'Level' found 0 plugins
+2019-09-13 12:24:18,035 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,043 Test worker DEBUG PluginManager 'TypeConverter' found 26 plugins
+2019-09-13 12:24:18,048 Test worker DEBUG createProperty(name="LOG_MAX_FILE_SIZE", value="30 MB")
+2019-09-13 12:24:18,048 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,049 Test worker DEBUG createProperty(name="LOG_MAX_INDEX", value="10")
+2019-09-13 12:24:18,049 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,049 Test worker DEBUG createProperty(name="LOG_FILE_LOCATION_PREFIX", value="/tmp")
+2019-09-13 12:24:18,050 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,050 Test worker DEBUG createProperty(name="LOG_FILE", value="${LOG_FILE_LOCATION_PREFIX}/admin-service.log")
+2019-09-13 12:24:18,050 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,051 Test worker DEBUG createProperty(name="LOG_FILE_PATTERN", value="${LOG_FILE}.%i.log.gz")
+2019-09-13 12:24:18,051 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,052 Test worker DEBUG createProperty(name="PID", value="????")
+2019-09-13 12:24:18,052 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,052 Test worker DEBUG createProperty(name="LOG_EXCEPTION_CONVERSION_WORD", value="%xwEx")
+2019-09-13 12:24:18,053 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,053 Test worker DEBUG createProperty(name="LOG_LEVEL_PATTERN", value="%5p")
+2019-09-13 12:24:18,053 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,054 Test worker DEBUG createProperty(name="LOG_DATEFORMAT_PATTERN", value="yyyy-MM-dd HH:mm:ss.SSS")
+2019-09-13 12:24:18,054 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,054 Test worker DEBUG createProperty(name="CONSOLE_LOG_PATTERN", value="%clr{%d{${LOG_DATEFORMAT_PATTERN}}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{${sys:PID}}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}")
+2019-09-13 12:24:18,055 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,055 Test worker DEBUG createProperty(name="FILE_LOG_PATTERN", value="%d{${LOG_DATEFORMAT_PATTERN}} ${LOG_LEVEL_PATTERN} ${sys:PID} --- [%t] %-40.40c{1.} : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}")
+2019-09-13 12:24:18,056 Test worker DEBUG Building Plugin[name=properties, class=org.apache.logging.log4j.core.config.PropertiesPlugin].
+2019-09-13 12:24:18,059 Test worker DEBUG configureSubstitutor(={LOG_MAX_FILE_SIZE=30 MB, LOG_MAX_INDEX=10, LOG_FILE_LOCATION_PREFIX=/tmp, LOG_FILE=${LOG_FILE_LOCATION_PREFIX}/admin-service.log, LOG_FILE_PATTERN=${LOG_FILE}.%i.log.gz, PID=????, LOG_EXCEPTION_CONVERSION_WORD=%xwEx, LOG_LEVEL_PATTERN=%5p, LOG_DATEFORMAT_PATTERN=yyyy-MM-dd HH:mm:ss.SSS, CONSOLE_LOG_PATTERN=%clr{%d{${LOG_DATEFORMAT_PATTERN}}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{${sys:PID}}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}, FILE_LOG_PATTERN=%d{${LOG_DATEFORMAT_PATTERN}} ${LOG_LEVEL_PATTERN} ${sys:PID} --- [%t] %-40.40c{1.} : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml))
+2019-09-13 12:24:18,060 Test worker DEBUG PluginManager 'Lookup' found 13 plugins
+2019-09-13 12:24:18,061 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-09-13 12:24:18,065 Test worker DEBUG PatternLayout$Builder(pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %5p ???? --- [%t] %-40.40c{1.} : %m%n%xwEx", PatternSelector=null, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-09-13 12:24:18,065 Test worker DEBUG PluginManager 'Converter' found 47 plugins
+2019-09-13 12:24:18,074 Test worker DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2019-09-13 12:24:18,075 Test worker DEBUG createPolicy(size="30 MB")
+2019-09-13 12:24:18,076 Test worker DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2019-09-13 12:24:18,077 Test worker DEBUG createPolicy(={SizeBasedTriggeringPolicy(size=31457280)})
+2019-09-13 12:24:18,077 Test worker DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2019-09-13 12:24:18,079 Test worker DEBUG DefaultRolloverStrategy$Builder(max="10", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="null", tempCompressedFilePattern="null", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml))
+2019-09-13 12:24:18,080 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2019-09-13 12:24:18,086 Test worker DEBUG RollingRandomAccessFileAppender$Builder(fileName="/tmp/admin-service.log", filePattern="/tmp/admin-service.log.%i.log.gz", append="false", Policies(CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=31457280)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=10, useMax=true)), advertise="null", advertiseURI="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="false", ignoreExceptions="null", PatternLayout(%d{yyyy-MM-dd HH:mm:ss.SSS} %5p ???? --- [%t] %-40.40c{1.} : %m%n%xwEx), name="RandomAccessFile", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null, ={})
+2019-09-13 12:24:18,090 Test worker DEBUG Starting RollingRandomAccessFileManager /tmp/admin-service.log
+2019-09-13 12:24:18,093 Test worker DEBUG PluginManager 'FileConverter' found 2 plugins
+2019-09-13 12:24:18,095 Test worker DEBUG Setting prev file time to 2019-09-13T12:24:18.089-0700
+2019-09-13 12:24:18,096 Test worker DEBUG Initializing triggering policy CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=31457280)])
+2019-09-13 12:24:18,097 Test worker DEBUG Initializing triggering policy SizeBasedTriggeringPolicy(size=31457280)
+2019-09-13 12:24:18,097 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-09-13 12:24:18,097 Test worker DEBUG PatternLayout$Builder(pattern="%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{????}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx", PatternSelector=null, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-09-13 12:24:18,099 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2019-09-13 12:24:18,101 Test worker DEBUG ConsoleAppender$Builder(target="SYSTEM_OUT", follow="true", direct="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{????}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx), name="Console", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null, ={})
+2019-09-13 12:24:18,102 Test worker DEBUG Starting OutputStreamManager SYSTEM_OUT.true.false
+2019-09-13 12:24:18,102 Test worker DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2019-09-13 12:24:18,103 Test worker DEBUG createAppenders(={RandomAccessFile, Console})
+2019-09-13 12:24:18,103 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,105 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.apache.catalina.startup.DigesterFactory", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,106 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,107 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.apache.catalina.util.LifecycleBase", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,107 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,108 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.coyote.http11.Http11NioProtocol", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,108 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,108 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.sshd.common.util.SecurityUtils", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,109 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,109 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.tomcat.util.net.NioSelectorPool", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,110 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,110 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.eclipse.jetty.util.component.AbstractLifeCycle", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,110 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,111 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.hibernate.validator.internal.util.Version", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,111 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,112 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.springframework.boot.actuate.endpoint.jmx", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,112 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-09-13 12:24:18,112 Test worker DEBUG createAppenderRef(ref="RandomAccessFile", level="null", Filter=null)
+2019-09-13 12:24:18,112 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-09-13 12:24:18,113 Test worker DEBUG createAppenderRef(ref="Console", level="null", Filter=null)
+2019-09-13 12:24:18,113 Test worker DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2019-09-13 12:24:18,113 Test worker DEBUG createLogger(additivity="null", level="INFO", includeLocation="null", ={RandomAccessFile, Console}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,114 Test worker DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2019-09-13 12:24:18,115 Test worker DEBUG createLoggers(={org.apache.catalina.startup.DigesterFactory, org.apache.catalina.util.LifecycleBase, org.apache.coyote.http11.Http11NioProtocol, org.apache.sshd.common.util.SecurityUtils, org.apache.tomcat.util.net.NioSelectorPool, org.eclipse.jetty.util.component.AbstractLifeCycle, org.hibernate.validator.internal.util.Version, org.springframework.boot.actuate.endpoint.jmx, root})
+2019-09-13 12:24:18,115 Test worker DEBUG Configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] initialized
+2019-09-13 12:24:18,115 Test worker DEBUG Starting configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml]
+2019-09-13 12:24:18,116 Test worker DEBUG Log4j2 ConfigurationScheduler starting 1 threads
+2019-09-13 12:24:18,117 Test worker DEBUG Started configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] OK.
+2019-09-13 12:24:18,118 Test worker DEBUG Shutting down OutputStreamManager SYSTEM_OUT.false.false-1
+2019-09-13 12:24:18,118 Test worker DEBUG Shut down OutputStreamManager SYSTEM_OUT.false.false-1, all resources released: true
+2019-09-13 12:24:18,118 Test worker DEBUG Appender DefaultConsole-1 stopped with status true
+2019-09-13 12:24:18,118 Test worker DEBUG Stopped org.apache.logging.log4j.core.config.DefaultConfiguration@28cd91b OK
+2019-09-13 12:24:18,150 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55
+2019-09-13 12:24:18,152 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=StatusLogger
+2019-09-13 12:24:18,153 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=ContextSelector
+2019-09-13 12:24:18,154 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.tomcat.util.net.NioSelectorPool
+2019-09-13 12:24:18,155 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.hibernate.validator.internal.util.Version
+2019-09-13 12:24:18,155 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=
+2019-09-13 12:24:18,155 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.coyote.http11.Http11NioProtocol
+2019-09-13 12:24:18,156 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.springframework.boot.actuate.endpoint.jmx
+2019-09-13 12:24:18,156 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.catalina.startup.DigesterFactory
+2019-09-13 12:24:18,156 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.eclipse.jetty.util.component.AbstractLifeCycle
+2019-09-13 12:24:18,157 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.catalina.util.LifecycleBase
+2019-09-13 12:24:18,157 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.sshd.common.util.SecurityUtils
+2019-09-13 12:24:18,158 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Appenders,name=RandomAccessFile
+2019-09-13 12:24:18,158 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Appenders,name=Console
+2019-09-13 12:24:18,160 Test worker DEBUG org.apache.logging.log4j.core.util.SystemClock does not support precise timestamps.
+2019-09-13 12:24:18,160 Test worker DEBUG Reconfiguration complete for context[name=2a139a55] at URI /Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml (org.apache.logging.log4j.core.LoggerContext@28bcfe7d) with optional ClassLoader: null
+2019-09-13 12:24:18,160 Test worker DEBUG Shutdown hook enabled. Registering a new one.
+2019-09-13 12:24:18,161 Test worker DEBUG LoggerContext[name=2a139a55, org.apache.logging.log4j.core.LoggerContext@28bcfe7d] started OK.
+2019-09-13 12:24:18.216  INFO ???? --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.platform.AdminServiceApplicationTests], using SpringBootContextLoader
+2019-09-13 12:24:18.222  INFO ???? --- [    Test worker] o.s.t.c.s.AbstractContextLoader          : Could not detect default resource locations for test class [com.example.platform.AdminServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-09-13 12:24:18.222  INFO ???? --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.platform.AdminServiceApplicationTests]: AdminServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-09-13 12:24:18.299  INFO ???? --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.platform.AdminServiceApplication for test class com.example.platform.AdminServiceApplicationTests
+2019-09-13 12:24:18.400  INFO ???? --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-09-13 12:24:18.406  INFO ???? --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f8f1aa, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@58348e6d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7db04ace, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c381d71, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f3ec6fd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@73856691, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@c1ca415, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3073f372, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4983d2af]
+2019-09-13 12:24:18,940 Test worker DEBUG Reconfiguration started for context[name=2a139a55] at URI null (org.apache.logging.log4j.core.LoggerContext@28bcfe7d) with optional ClassLoader: null
+2019-09-13 12:24:18,940 Test worker DEBUG Using configurationFactory org.apache.logging.log4j.core.config.ConfigurationFactory$Factory@53c06b8e
+2019-09-13 12:24:18,949 Test worker DEBUG Not in a ServletContext environment, thus not loading WebLookup plugin.
+2019-09-13 12:24:18,949 Test worker DEBUG Closing BufferedInputStream java.io.BufferedInputStream@bf823b9
+2019-09-13 12:24:18,956 Test worker DEBUG Watching file '/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml' for lastModified Fri Sep 13 12:24:16 PDT 2019 (1568402656000)
+2019-09-13 12:24:18,956 Test worker DEBUG Apache Log4j Core 2.11.2 initializing configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml]
+2019-09-13 12:24:18,957 Test worker DEBUG Installed 1 script engine
+2019-09-13 12:24:18,963 Test worker DEBUG Oracle Nashorn version: 1.8.0_222, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2019-09-13 12:24:18,963 Test worker DEBUG PluginManager 'Core' found 117 plugins
+2019-09-13 12:24:18,964 Test worker DEBUG PluginManager 'Level' found 0 plugins
+2019-09-13 12:24:18,965 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,965 Test worker DEBUG createProperty(name="LOG_MAX_FILE_SIZE", value="30 MB")
+2019-09-13 12:24:18,966 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,966 Test worker DEBUG createProperty(name="LOG_MAX_INDEX", value="10")
+2019-09-13 12:24:18,966 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,966 Test worker DEBUG createProperty(name="LOG_FILE_LOCATION_PREFIX", value="/tmp")
+2019-09-13 12:24:18,967 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,967 Test worker DEBUG createProperty(name="LOG_FILE", value="${LOG_FILE_LOCATION_PREFIX}/admin-service.log")
+2019-09-13 12:24:18,967 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,968 Test worker DEBUG createProperty(name="LOG_FILE_PATTERN", value="${LOG_FILE}.%i.log.gz")
+2019-09-13 12:24:18,968 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,969 Test worker DEBUG createProperty(name="PID", value="????")
+2019-09-13 12:24:18,969 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,969 Test worker DEBUG createProperty(name="LOG_EXCEPTION_CONVERSION_WORD", value="%xwEx")
+2019-09-13 12:24:18,970 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,970 Test worker DEBUG createProperty(name="LOG_LEVEL_PATTERN", value="%5p")
+2019-09-13 12:24:18,970 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,971 Test worker DEBUG createProperty(name="LOG_DATEFORMAT_PATTERN", value="yyyy-MM-dd HH:mm:ss.SSS")
+2019-09-13 12:24:18,971 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,971 Test worker DEBUG createProperty(name="CONSOLE_LOG_PATTERN", value="%clr{%d{${LOG_DATEFORMAT_PATTERN}}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}")
+2019-09-13 12:24:18,972 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:18,972 Test worker DEBUG createProperty(name="FILE_LOG_PATTERN", value="%d{${LOG_DATEFORMAT_PATTERN}} ${LOG_LEVEL_PATTERN} 62121 --- [%t] %-40.40c{1.} : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}")
+2019-09-13 12:24:18,973 Test worker DEBUG Building Plugin[name=properties, class=org.apache.logging.log4j.core.config.PropertiesPlugin].
+2019-09-13 12:24:18,973 Test worker DEBUG configureSubstitutor(={LOG_MAX_FILE_SIZE=30 MB, LOG_MAX_INDEX=10, LOG_FILE_LOCATION_PREFIX=/tmp, LOG_FILE=${LOG_FILE_LOCATION_PREFIX}/admin-service.log, LOG_FILE_PATTERN=${LOG_FILE}.%i.log.gz, PID=????, LOG_EXCEPTION_CONVERSION_WORD=%xwEx, LOG_LEVEL_PATTERN=%5p, LOG_DATEFORMAT_PATTERN=yyyy-MM-dd HH:mm:ss.SSS, CONSOLE_LOG_PATTERN=%clr{%d{${LOG_DATEFORMAT_PATTERN}}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}, FILE_LOG_PATTERN=%d{${LOG_DATEFORMAT_PATTERN}} ${LOG_LEVEL_PATTERN} 62121 --- [%t] %-40.40c{1.} : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml))
+2019-09-13 12:24:18,973 Test worker DEBUG PluginManager 'Lookup' found 13 plugins
+2019-09-13 12:24:18,974 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-09-13 12:24:18,974 Test worker DEBUG PatternLayout$Builder(pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %5p 62121 --- [%t] %-40.40c{1.} : %m%n%xwEx", PatternSelector=null, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-09-13 12:24:18,975 Test worker DEBUG PluginManager 'Converter' found 47 plugins
+2019-09-13 12:24:18,975 Test worker DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2019-09-13 12:24:18,976 Test worker DEBUG createPolicy(size="30 MB")
+2019-09-13 12:24:18,976 Test worker DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2019-09-13 12:24:18,976 Test worker DEBUG createPolicy(={SizeBasedTriggeringPolicy(size=31457280)})
+2019-09-13 12:24:18,977 Test worker DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2019-09-13 12:24:18,977 Test worker DEBUG DefaultRolloverStrategy$Builder(max="10", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="null", tempCompressedFilePattern="null", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml))
+2019-09-13 12:24:18,977 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2019-09-13 12:24:18,978 Test worker DEBUG RollingRandomAccessFileAppender$Builder(fileName="/tmp/admin-service.log", filePattern="/tmp/admin-service.log.%i.log.gz", append="false", Policies(CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=31457280)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=10, useMax=true)), advertise="null", advertiseURI="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="false", ignoreExceptions="null", PatternLayout(%d{yyyy-MM-dd HH:mm:ss.SSS} %5p 62121 --- [%t] %-40.40c{1.} : %m%n%xwEx), name="RandomAccessFile", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null, ={})
+2019-09-13 12:24:18,978 Test worker DEBUG Initializing triggering policy SizeBasedTriggeringPolicy(size=31457280)
+2019-09-13 12:24:18,978 Test worker DEBUG PluginManager 'FileConverter' found 2 plugins
+2019-09-13 12:24:18,979 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-09-13 12:24:18,979 Test worker DEBUG PatternLayout$Builder(pattern="%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx", PatternSelector=null, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-09-13 12:24:18,980 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2019-09-13 12:24:18,980 Test worker DEBUG ConsoleAppender$Builder(target="SYSTEM_OUT", follow="true", direct="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx), name="Console", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null, ={})
+2019-09-13 12:24:18,981 Test worker DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2019-09-13 12:24:18,981 Test worker DEBUG createAppenders(={RandomAccessFile, Console})
+2019-09-13 12:24:18,982 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,982 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.apache.catalina.startup.DigesterFactory", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,983 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,984 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.apache.catalina.util.LifecycleBase", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,984 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,985 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.coyote.http11.Http11NioProtocol", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,985 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,985 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.sshd.common.util.SecurityUtils", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,986 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,986 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.tomcat.util.net.NioSelectorPool", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,986 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,987 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.eclipse.jetty.util.component.AbstractLifeCycle", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,987 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,988 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.hibernate.validator.internal.util.Version", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,988 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:18,989 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.springframework.boot.actuate.endpoint.jmx", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,989 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-09-13 12:24:18,990 Test worker DEBUG createAppenderRef(ref="RandomAccessFile", level="null", Filter=null)
+2019-09-13 12:24:18,990 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-09-13 12:24:18,990 Test worker DEBUG createAppenderRef(ref="Console", level="null", Filter=null)
+2019-09-13 12:24:18,990 Test worker DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2019-09-13 12:24:18,991 Test worker DEBUG createLogger(additivity="null", level="INFO", includeLocation="null", ={RandomAccessFile, Console}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:18,991 Test worker DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2019-09-13 12:24:18,991 Test worker DEBUG createLoggers(={org.apache.catalina.startup.DigesterFactory, org.apache.catalina.util.LifecycleBase, org.apache.coyote.http11.Http11NioProtocol, org.apache.sshd.common.util.SecurityUtils, org.apache.tomcat.util.net.NioSelectorPool, org.eclipse.jetty.util.component.AbstractLifeCycle, org.hibernate.validator.internal.util.Version, org.springframework.boot.actuate.endpoint.jmx, root})
+2019-09-13 12:24:18,992 Test worker DEBUG Configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] initialized
+2019-09-13 12:24:18,992 Test worker DEBUG Starting configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml]
+2019-09-13 12:24:18,992 Test worker DEBUG Log4j2 ConfigurationScheduler starting 1 threads
+2019-09-13 12:24:18,993 Test worker DEBUG Started configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] OK.
+2019-09-13 12:24:18,993 Test worker DEBUG Appender Console stopped with status true
+2019-09-13 12:24:18,993 Test worker DEBUG Appender RandomAccessFile stopped with status true
+2019-09-13 12:24:18,994 Test worker DEBUG Log4j2 ConfigurationScheduler shutting down threads in java.util.concurrent.ScheduledThreadPoolExecutor@422afb3[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 0]
+2019-09-13 12:24:18,994 Test worker DEBUG Stopped XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] OK
+2019-09-13 12:24:18,995 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55
+2019-09-13 12:24:18,996 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=StatusLogger
+2019-09-13 12:24:18,996 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=ContextSelector
+2019-09-13 12:24:18,996 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.tomcat.util.net.NioSelectorPool
+2019-09-13 12:24:18,997 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.hibernate.validator.internal.util.Version
+2019-09-13 12:24:18,997 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=
+2019-09-13 12:24:18,997 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.coyote.http11.Http11NioProtocol
+2019-09-13 12:24:18,998 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.springframework.boot.actuate.endpoint.jmx
+2019-09-13 12:24:18,998 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.catalina.startup.DigesterFactory
+2019-09-13 12:24:18,998 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.eclipse.jetty.util.component.AbstractLifeCycle
+2019-09-13 12:24:18,999 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.catalina.util.LifecycleBase
+2019-09-13 12:24:18,999 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.sshd.common.util.SecurityUtils
+2019-09-13 12:24:18,999 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Appenders,name=RandomAccessFile
+2019-09-13 12:24:18,999 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Appenders,name=Console
+2019-09-13 12:24:19,000 Test worker DEBUG Reconfiguration complete for context[name=2a139a55] at URI /Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml (org.apache.logging.log4j.core.LoggerContext@28bcfe7d) with optional ClassLoader: null
+2019-09-13 12:24:19.306  INFO 62121 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$613d2f86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-13 12:24:19,404 Test worker DEBUG Reconfiguration started for context[name=2a139a55] at URI null (org.apache.logging.log4j.core.LoggerContext@28bcfe7d) with optional ClassLoader: null
+2019-09-13 12:24:19,405 Test worker DEBUG Using configurationFactory org.apache.logging.log4j.core.config.ConfigurationFactory$Factory@53c06b8e
+2019-09-13 12:24:19,412 Test worker DEBUG Not in a ServletContext environment, thus not loading WebLookup plugin.
+2019-09-13 12:24:19,412 Test worker DEBUG Closing BufferedInputStream java.io.BufferedInputStream@f6e7866
+2019-09-13 12:24:19,415 Test worker DEBUG Watching file '/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml' for lastModified Fri Sep 13 12:24:16 PDT 2019 (1568402656000)
+2019-09-13 12:24:19,416 Test worker DEBUG Apache Log4j Core 2.11.2 initializing configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml]
+2019-09-13 12:24:19,416 Test worker DEBUG Installed 1 script engine
+2019-09-13 12:24:19,421 Test worker DEBUG Oracle Nashorn version: 1.8.0_222, language: ECMAScript, threading: Not Thread Safe, compile: true, names: [nashorn, Nashorn, js, JS, JavaScript, javascript, ECMAScript, ecmascript], factory class: jdk.nashorn.api.scripting.NashornScriptEngineFactory
+2019-09-13 12:24:19,421 Test worker DEBUG PluginManager 'Core' found 117 plugins
+2019-09-13 12:24:19,421 Test worker DEBUG PluginManager 'Level' found 0 plugins
+2019-09-13 12:24:19,422 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,423 Test worker DEBUG createProperty(name="LOG_MAX_FILE_SIZE", value="30 MB")
+2019-09-13 12:24:19,423 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,424 Test worker DEBUG createProperty(name="LOG_MAX_INDEX", value="10")
+2019-09-13 12:24:19,424 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,424 Test worker DEBUG createProperty(name="LOG_FILE_LOCATION_PREFIX", value="/tmp")
+2019-09-13 12:24:19,424 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,425 Test worker DEBUG createProperty(name="LOG_FILE", value="${LOG_FILE_LOCATION_PREFIX}/admin-service.log")
+2019-09-13 12:24:19,425 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,425 Test worker DEBUG createProperty(name="LOG_FILE_PATTERN", value="${LOG_FILE}.%i.log.gz")
+2019-09-13 12:24:19,425 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,425 Test worker DEBUG createProperty(name="PID", value="????")
+2019-09-13 12:24:19,426 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,426 Test worker DEBUG createProperty(name="LOG_EXCEPTION_CONVERSION_WORD", value="%xwEx")
+2019-09-13 12:24:19,426 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,426 Test worker DEBUG createProperty(name="LOG_LEVEL_PATTERN", value="%5p")
+2019-09-13 12:24:19,426 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,427 Test worker DEBUG createProperty(name="LOG_DATEFORMAT_PATTERN", value="yyyy-MM-dd HH:mm:ss.SSS")
+2019-09-13 12:24:19,427 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,427 Test worker DEBUG createProperty(name="CONSOLE_LOG_PATTERN", value="%clr{%d{${LOG_DATEFORMAT_PATTERN}}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}")
+2019-09-13 12:24:19,427 Test worker DEBUG Building Plugin[name=property, class=org.apache.logging.log4j.core.config.Property].
+2019-09-13 12:24:19,428 Test worker DEBUG createProperty(name="FILE_LOG_PATTERN", value="%d{${LOG_DATEFORMAT_PATTERN}} ${LOG_LEVEL_PATTERN} 62121 --- [%t] %-40.40c{1.} : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}")
+2019-09-13 12:24:19,428 Test worker DEBUG Building Plugin[name=properties, class=org.apache.logging.log4j.core.config.PropertiesPlugin].
+2019-09-13 12:24:19,428 Test worker DEBUG configureSubstitutor(={LOG_MAX_FILE_SIZE=30 MB, LOG_MAX_INDEX=10, LOG_FILE_LOCATION_PREFIX=/tmp, LOG_FILE=${LOG_FILE_LOCATION_PREFIX}/admin-service.log, LOG_FILE_PATTERN=${LOG_FILE}.%i.log.gz, PID=????, LOG_EXCEPTION_CONVERSION_WORD=%xwEx, LOG_LEVEL_PATTERN=%5p, LOG_DATEFORMAT_PATTERN=yyyy-MM-dd HH:mm:ss.SSS, CONSOLE_LOG_PATTERN=%clr{%d{${LOG_DATEFORMAT_PATTERN}}}{faint} %clr{${LOG_LEVEL_PATTERN}} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}, FILE_LOG_PATTERN=%d{${LOG_DATEFORMAT_PATTERN}} ${LOG_LEVEL_PATTERN} 62121 --- [%t] %-40.40c{1.} : %m%n${sys:LOG_EXCEPTION_CONVERSION_WORD}}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml))
+2019-09-13 12:24:19,428 Test worker DEBUG PluginManager 'Lookup' found 13 plugins
+2019-09-13 12:24:19,429 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-09-13 12:24:19,429 Test worker DEBUG PatternLayout$Builder(pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} %5p 62121 --- [%t] %-40.40c{1.} : %m%n%xwEx", PatternSelector=null, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-09-13 12:24:19,429 Test worker DEBUG PluginManager 'Converter' found 47 plugins
+2019-09-13 12:24:19,430 Test worker DEBUG Building Plugin[name=SizeBasedTriggeringPolicy, class=org.apache.logging.log4j.core.appender.rolling.SizeBasedTriggeringPolicy].
+2019-09-13 12:24:19,430 Test worker DEBUG createPolicy(size="30 MB")
+2019-09-13 12:24:19,430 Test worker DEBUG Building Plugin[name=Policies, class=org.apache.logging.log4j.core.appender.rolling.CompositeTriggeringPolicy].
+2019-09-13 12:24:19,431 Test worker DEBUG createPolicy(={SizeBasedTriggeringPolicy(size=31457280)})
+2019-09-13 12:24:19,431 Test worker DEBUG Building Plugin[name=DefaultRolloverStrategy, class=org.apache.logging.log4j.core.appender.rolling.DefaultRolloverStrategy].
+2019-09-13 12:24:19,431 Test worker DEBUG DefaultRolloverStrategy$Builder(max="10", min="null", fileIndex="null", compressionLevel="null", ={}, stopCustomActionsOnError="null", tempCompressedFilePattern="null", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml))
+2019-09-13 12:24:19,431 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender].
+2019-09-13 12:24:19,432 Test worker DEBUG RollingRandomAccessFileAppender$Builder(fileName="/tmp/admin-service.log", filePattern="/tmp/admin-service.log.%i.log.gz", append="false", Policies(CompositeTriggeringPolicy(policies=[SizeBasedTriggeringPolicy(size=31457280)])), DefaultRolloverStrategy(DefaultRolloverStrategy(min=1, max=10, useMax=true)), advertise="null", advertiseURI="null", filePermissions="null", fileOwner="null", fileGroup="null", bufferedIo="null", bufferSize="null", immediateFlush="false", ignoreExceptions="null", PatternLayout(%d{yyyy-MM-dd HH:mm:ss.SSS} %5p 62121 --- [%t] %-40.40c{1.} : %m%n%xwEx), name="RandomAccessFile", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null, ={})
+2019-09-13 12:24:19,432 Test worker DEBUG Initializing triggering policy SizeBasedTriggeringPolicy(size=31457280)
+2019-09-13 12:24:19,432 Test worker DEBUG PluginManager 'FileConverter' found 2 plugins
+2019-09-13 12:24:19,432 Test worker DEBUG Building Plugin[name=layout, class=org.apache.logging.log4j.core.layout.PatternLayout].
+2019-09-13 12:24:19,433 Test worker DEBUG PatternLayout$Builder(pattern="%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx", PatternSelector=null, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Replace=null, charset="null", alwaysWriteExceptions="null", disableAnsi="null", noConsoleNoAnsi="null", header="null", footer="null")
+2019-09-13 12:24:19,433 Test worker DEBUG Building Plugin[name=appender, class=org.apache.logging.log4j.core.appender.ConsoleAppender].
+2019-09-13 12:24:19,434 Test worker DEBUG ConsoleAppender$Builder(target="SYSTEM_OUT", follow="true", direct="null", bufferedIo="null", bufferSize="null", immediateFlush="null", ignoreExceptions="null", PatternLayout(%clr{%d{yyyy-MM-dd HH:mm:ss.SSS}}{faint} %clr{%5p} %clr{62121}{magenta} %clr{---}{faint} %clr{[%15.15t]}{faint} %clr{%-40.40c{1.}}{cyan} %clr{:}{faint} %m%n%xwEx), name="Console", Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null, ={})
+2019-09-13 12:24:19,434 Test worker DEBUG Building Plugin[name=appenders, class=org.apache.logging.log4j.core.config.AppendersPlugin].
+2019-09-13 12:24:19,435 Test worker DEBUG createAppenders(={RandomAccessFile, Console})
+2019-09-13 12:24:19,435 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,435 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.apache.catalina.startup.DigesterFactory", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,436 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,436 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.apache.catalina.util.LifecycleBase", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,436 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,437 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.coyote.http11.Http11NioProtocol", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,437 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,437 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.sshd.common.util.SecurityUtils", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,437 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,438 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.apache.tomcat.util.net.NioSelectorPool", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,438 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,438 Test worker DEBUG createLogger(additivity="true", level="ERROR", name="org.eclipse.jetty.util.component.AbstractLifeCycle", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,439 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,439 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.hibernate.validator.internal.util.Version", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,439 Test worker DEBUG Building Plugin[name=logger, class=org.apache.logging.log4j.core.config.LoggerConfig].
+2019-09-13 12:24:19,440 Test worker DEBUG createLogger(additivity="true", level="WARN", name="org.springframework.boot.actuate.endpoint.jmx", includeLocation="null", ={}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,440 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-09-13 12:24:19,440 Test worker DEBUG createAppenderRef(ref="RandomAccessFile", level="null", Filter=null)
+2019-09-13 12:24:19,440 Test worker DEBUG Building Plugin[name=AppenderRef, class=org.apache.logging.log4j.core.config.AppenderRef].
+2019-09-13 12:24:19,441 Test worker DEBUG createAppenderRef(ref="Console", level="null", Filter=null)
+2019-09-13 12:24:19,441 Test worker DEBUG Building Plugin[name=root, class=org.apache.logging.log4j.core.config.LoggerConfig$RootLogger].
+2019-09-13 12:24:19,441 Test worker DEBUG createLogger(additivity="null", level="INFO", includeLocation="null", ={RandomAccessFile, Console}, ={}, Configuration(/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml), Filter=null)
+2019-09-13 12:24:19,441 Test worker DEBUG Building Plugin[name=loggers, class=org.apache.logging.log4j.core.config.LoggersPlugin].
+2019-09-13 12:24:19,441 Test worker DEBUG createLoggers(={org.apache.catalina.startup.DigesterFactory, org.apache.catalina.util.LifecycleBase, org.apache.coyote.http11.Http11NioProtocol, org.apache.sshd.common.util.SecurityUtils, org.apache.tomcat.util.net.NioSelectorPool, org.eclipse.jetty.util.component.AbstractLifeCycle, org.hibernate.validator.internal.util.Version, org.springframework.boot.actuate.endpoint.jmx, root})
+2019-09-13 12:24:19,442 Test worker DEBUG Configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] initialized
+2019-09-13 12:24:19,442 Test worker DEBUG Starting configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml]
+2019-09-13 12:24:19,442 Test worker DEBUG Log4j2 ConfigurationScheduler starting 1 threads
+2019-09-13 12:24:19,442 Test worker DEBUG Started configuration XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] OK.
+2019-09-13 12:24:19,443 Test worker DEBUG Appender Console stopped with status true
+2019-09-13 12:24:19,443 Test worker DEBUG Appender RandomAccessFile stopped with status true
+2019-09-13 12:24:19,443 Test worker DEBUG Log4j2 ConfigurationScheduler shutting down threads in java.util.concurrent.ScheduledThreadPoolExecutor@4995f044[Running, pool size = 1, active threads = 0, queued tasks = 1, completed tasks = 0]
+2019-09-13 12:24:19,443 Test worker DEBUG Stopped XmlConfiguration[location=/Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml] OK
+2019-09-13 12:24:19,444 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55
+2019-09-13 12:24:19,445 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=StatusLogger
+2019-09-13 12:24:19,445 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=ContextSelector
+2019-09-13 12:24:19,445 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.tomcat.util.net.NioSelectorPool
+2019-09-13 12:24:19,446 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.hibernate.validator.internal.util.Version
+2019-09-13 12:24:19,446 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=
+2019-09-13 12:24:19,446 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.coyote.http11.Http11NioProtocol
+2019-09-13 12:24:19,446 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.springframework.boot.actuate.endpoint.jmx
+2019-09-13 12:24:19,447 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.catalina.startup.DigesterFactory
+2019-09-13 12:24:19,447 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.eclipse.jetty.util.component.AbstractLifeCycle
+2019-09-13 12:24:19,447 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.catalina.util.LifecycleBase
+2019-09-13 12:24:19,448 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Loggers,name=org.apache.sshd.common.util.SecurityUtils
+2019-09-13 12:24:19,448 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Appenders,name=RandomAccessFile
+2019-09-13 12:24:19,448 Test worker DEBUG Registering MBean org.apache.logging.log4j2:type=2a139a55,component=Appenders,name=Console
+2019-09-13 12:24:19,448 Test worker DEBUG Reconfiguration complete for context[name=2a139a55] at URI /Users/yh13095/progs/scratch/mycode/platform-services/admin-service/build/resources/main/log4j2.xml (org.apache.logging.log4j.core.LoggerContext@28bcfe7d) with optional ClassLoader: null
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.3.RELEASE)
+
+2019-09-13 12:24:19.467  INFO 62121 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2019-09-13 12:24:19.504  INFO 62121 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:8888. Will be trying the next url if available
+2019-09-13 12:24:19.505  WARN 62121 --- [    Test worker] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:8888/admin-service/default": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+2019-09-13 12:24:19.511  INFO 62121 --- [    Test worker] c.e.p.AdminServiceApplicationTests       : No active profile set, falling back to default profiles: default
+2019-09-13 12:24:19.968  WARN 62121 --- [    Test worker] o.s.b.a.e.EndpointId                     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2019-09-13 12:24:20.174  INFO 62121 --- [    Test worker] o.s.c.c.s.GenericScope                   : BeanFactory id=14357586-e18e-38e9-b88d-8581dd31024a
+2019-09-13 12:24:20.427  INFO 62121 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$613d2f86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-13 12:24:20.435  INFO 62121 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration' of type [org.springframework.cloud.sleuth.instrument.web.client.TraceWebClientAutoConfiguration$NettyConfiguration$$EnhancerBySpringCGLIB$$43b9570c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-13 12:24:20.928  WARN 62121 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2019-09-13 12:24:21.390  WARN 62121 --- [    Test worker] o.s.c.k.KubernetesAutoConfiguration      : No namespace has been detected. Please specify KUBERNETES_NAMESPACE env var, or use a later kubernetes version (1.3 or later)
+2019-09-13 12:24:21.898  INFO 62121 --- [    Test worker] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 19 endpoint(s) beneath base path '/actuator'
+2019-09-13 12:24:22.953  INFO 62121 --- [    Test worker] c.e.p.AdminServiceApplicationTests       : Started AdminServiceApplicationTests in 4.52 seconds (JVM running for 5.766)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
